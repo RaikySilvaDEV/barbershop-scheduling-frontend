@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Tema claro (opcional, se quiser só escuro, pode ignorar) */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 45 90% 55%; /* dourado */
+    --primary-foreground: 0 0% 10%; /* texto escuro no dourado */
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 45 85% 60%; /* dourado claro */
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 45 85% 60%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 45 85% 60%;
+    --chart-2: 240 5% 30%;
+    --chart-3: 0 0% 20%;
+    --chart-4: 45 95% 70%;
+    --chart-5: 240 10% 20%;
+  }
+
+  .dark {
+    --background: 0 0% 3%; /* preto total */
+    --foreground: 45 30% 85%; /* texto dourado suave */
+
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 45 30% 90%;
+
+    --primary: 45 90% 55%; /* dourado principal */
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 45 40% 80%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 45 25% 65%;
+
+    --accent: 45 90% 50%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 45 25% 25%; /* dourado bem sutil */
+    --input: 0 0% 15%;
+    --ring: 45 90% 50%;
+
+    --chart-1: 45 90% 55%;
+    --chart-2: 0 0% 20%;
+    --chart-3: 45 80% 65%;
+    --chart-4: 240 5% 25%;
+    --chart-5: 45 95% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
